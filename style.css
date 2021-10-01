@@ -1,0 +1,43 @@
+.opacityin {
+  opacity: 0.5;
+  animation-name: opacitya;
+  animation-duration: 500ms;
+}
+.opacityout {
+  opacity: 1;
+  animation-name: opacityb;
+  animation-duration: 500ms;
+}
+
+@keyframes opacitya {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+@keyframes opacityb {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.screen-height {
+  height: 100vh;
+}
+.scroll-bar {
+  max-height: 50px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+.content-displayed {
+  min-height: 150px;
+}
+#buttons {
+  z-index: 1000;
+}
