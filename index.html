@@ -17,14 +17,25 @@
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <meta name=”robots” content="index, follow">
+  <meta name="description" content="Generate a password for free">
 </head>
 
 <body class="bg-dark">
-  <header class="text-light fixed-top">
-    <h1 class="text-center fw-bold border-bottom mb-0 pb-2">Password Generator</h1>
+  <header class="text-light container fixed-top">
+    <!-- <h1 class="text-center fw-bold border-bottom mb-0 pb-2">Password Generator</h1> -->
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid px-0">
+        <a class="navbar-brand" href="https://pswgenerator.twozer00.dev">
+          <img src="resources/img/pswGenerator-logo.svg" alt="" width="30" height="24"
+            class="d-inline-block align-text-top">
+          Password Generator
+        </a>
+      </div>
+    </nav>
   </header>
-  <main class="d-flex align-items-center screen-height px-5">
-    <div class="container text-light border rounded">
+  <main class="d-flex align-items-center vh-100 container">
+    <div class="text-light border rounded container-fluid px-0">
       <div class="row px-4 py-4">
         <div class="col-md p-0">
           <div class="pe-1">
@@ -32,15 +43,15 @@
             <input type="range" class="form-range" id="lenght" step="1" min="8" max="32" class="w-100" />
             <div class="form-check form-switch">
               <input class="form-check-input" type="checkbox" id="upperCase">
-              <label class="form-check-label" for="flexSwitchCheckChecked">Uppercase Letters</label>
+              <label class="form-check-label" for="upperCase">Uppercase Letters</label>
             </div>
             <div class="form-check form-switch">
               <input class="form-check-input" type="checkbox" id="numbers">
-              <label class="form-check-label" for="flexSwitchCheckChecked">Numbers</label>
+              <label class="form-check-label" for="numbers">Numbers</label>
             </div>
             <div class="form-check form-switch">
               <input class="form-check-input" type="checkbox" id="symbols">
-              <label class="form-check-label" for="flexSwitchCheckChecked">Symbols</label>
+              <label class="form-check-label" for="symbols">Symbols</label>
             </div>
           </div>
         </div>
@@ -108,7 +119,7 @@
     </li>
     <li class="nav-item">
       <p class="nav-link link-light">
-        v1.1
+        v1.2
       </p>
     </li>
   </footer>
